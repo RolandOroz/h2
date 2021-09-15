@@ -1,0 +1,870 @@
+2021-09-15 09:50:51 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     PRIMARYKEY (ID)
+     ) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 09:52:31 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     PRIMARYKEY (ID)
+     ) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 09:54:17 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST( ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     PRIMARYKEY (ID)) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 09:56:27 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST( ID INT PRIMARYKEY[*] NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE POST( ID INT PRIMARYKEY NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL) [42001-200]
+2021-09-15 10:00:38 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST( ID INT PRIMARYKEY[*] NOT NULL AUTO_INCREMENT)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE POST( ID INT PRIMARYKEY NOT NULL AUTO_INCREMENT) [42001-200]
+2021-09-15 10:01:56 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     PRIMARYKEY [ID]
+     ) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 10:02:13 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     
+     )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     
+     ) [42001-200]
+2021-09-15 10:03:22 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE POST([*]
+     ID INTEGER NOT NULL AUTO_INCREMENT)"; SQL statement:
+drop TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT) [42000-200]
+2021-09-15 10:03:48 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(
+       NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+     PRIMARYKEY (ID)
+     ) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 10:03:56 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+       NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+    
+     )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE POST(
+       NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL,
+    
+     ) [42001-200]
+2021-09-15 10:04:02 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+       NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     
+    
+     )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE POST(
+       NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     
+    
+     ) [42001-200]
+2021-09-15 10:05:25 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT),[*]
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),(
+     PRIMARYKEY (ID))
+     )"; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT),
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),(
+     PRIMARYKEY (ID))
+     ) [42000-200]
+2021-09-15 10:05:38 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT),[*]
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),
+     )"; SQL statement:
+CREATE TABLE POST(
+     ID INTEGER NOT NULL AUTO_INCREMENT),
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),
+     ) [42000-200]
+2021-09-15 10:06:16 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST[[*]
+     (ID INTEGER NOT NULL AUTO_INCREMENT),
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),
+     )]"; SQL statement:
+CREATE TABLE POST[
+     (ID INTEGER NOT NULL AUTO_INCREMENT),
+     (NEWSTITLE VARCHAR(255) NOT NULL),
+     (CREATED VARCHAR(255) NOT NULL),
+     (FPOST VARCHAR(250) DEFAULT NULL),
+     )] [42000-200]
+2021-09-15 10:06:47 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST[[*]
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL
+    )]"; SQL statement:
+CREATE TABLE POST[
+     ID INTEGER NOT NULL AUTO_INCREMENT,
+     NEWSTITLE VARCHAR(255) NOT NULL,
+     CREATED VARCHAR(255) NOT NULL,
+     FPOST VARCHAR(250) DEFAULT NULL
+    )] [42000-200]
+2021-09-15 10:07:23 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(
+     'ID INTEGER NOT NULL AUTO_INCREMENT'[*],
+     'NEWSTITLE VARCHAR(255) NOT NULL',
+     'CREATED VARCHAR(255) NOT NULL',
+     'FPOST VARCHAR(250) DEFAULT NULL'
+    )"; expected "identifier"; SQL statement:
+CREATE TABLE POST(
+     'ID INTEGER NOT NULL AUTO_INCREMENT',
+     'NEWSTITLE VARCHAR(255) NOT NULL',
+     'CREATED VARCHAR(255) NOT NULL',
+     'FPOST VARCHAR(250) DEFAULT NULL'
+    ) [42001-200]
+2021-09-15 10:14:38 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(ID INTEGER NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL,PRIMARYKEY (ID)) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 10:14:43 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE POST(ID INTEGER NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL,PRIMARYKEY (ID)) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp.query(WebApp.java:1092)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-09-15 10:15:28 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(ID INTEGER PRIMARYKEY[*] NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE POST(ID INTEGER PRIMARYKEY NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL) [42001-200]
+2021-09-15 10:16:54 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(ID INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT[*],NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL)"; expected "COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE POST(ID INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL) [42001-200]
+2021-09-15 10:18:42 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE POST(ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT[*],NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL)"; expected "COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE POST(ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,NEWSTITLE VARCHAR(255) NOT NULL,CREATED VARCHAR(255) NOT NULL,FPOST VARCHAR(250) DEFAULT NULL) [42001-200]
+2021-09-15 10:23:40 jdbc[25]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:67)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2035)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:66)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 80 more
+2021-09-15 10:24:44 jdbc[47]: java.lang.Exception: Open Stack Trace
+	at org.h2.util.CloseWatcher.register(CloseWatcher.java:100)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:187)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:67)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2035)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:66)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 80 more
